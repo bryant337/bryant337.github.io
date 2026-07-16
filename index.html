@@ -31,7 +31,7 @@
     </div>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+      <li><a href="https://github.com/yenchiah/project-website-template" target="_blank">GitHub</a></li>
       <li><a href="team.html">Team</a></li>
     </ul>
   </nav>
@@ -128,11 +128,11 @@
 
       <div class="compact-gallery-grid">
         <div class="gallery-item">
-          <img src="img/setup.jpg" alt="Project Setup">
+          <img src="img/WhatsApp Image 2026-07-13 at 12.26.10.jpeg" alt="Project Setup">
           <div class="caption">Project Setup</div>
         </div>
         <div class="gallery-item">
-          <img src="css/img/diy-presence-sensor-ld2410C-testing-wired-1024x768.jpg.webp" alt="Presence Sensor">
+          <img src="img/diy-presence-sensor-ld2410C-testing-wired-1024x768.jpg.webp" alt="Presence Sensor">
           <div class="caption">Presence Sensor &amp; ESP32</div>
         </div>
         <div class="gallery-item placeholder">
@@ -140,7 +140,7 @@
           <div class="caption">Real-time Interface</div>
         </div>
         <div class="gallery-item placeholder">
-          <div class="dummy-img">430 × 270</div>
+          <img src="img/enclosure.jpg" alt="System Enclosure">
           <div class="caption">System Enclosure</div>
         </div>
       </div>
@@ -156,10 +156,14 @@
         <span class="institution">Academic Embedded Systems Project • Makerere University</span>
       </div>
       <div class="footer-meta">
-        <p class="copyright">&copy; 2026 All Rights Reserved</p>
+        <p class="copyright">&copy; <span id="year"></span> All Rights Reserved</p>
       </div>
     </div>
   </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 
 </html>
