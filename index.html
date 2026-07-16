@@ -1,7 +1,174 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <title>Adaptive Lighting System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+  <!-- Navigation Update -->
+  <!-- Navigation Update with Vector Logo -->
+  <nav class="custom-nav">
+    <div class="nav-brand">
+      <!-- SVG Icon -->
+      <svg class="nav-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#38bdf8"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path
+          d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .6 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+        <line x1="9" y1="18" x2="15" y2="18" />
+        <line x1="10" y1="21" x2="14" y2="21" />
+        <circle cx="12" cy="7" r="1" fill="#38bdf8" />
+        <circle cx="9" cy="10" r="1" fill="#38bdf8" />
+        <circle cx="15" cy="10" r="1" fill="#38bdf8" />
+        <polyline points="9 10 12 7 15 10" />
+        <line x1="12" y1="7" x2="12" y2="14" />
+      </svg>
+      <span>Adaptive Lighting System</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Banner Image Container -->
+  <div class="hero-banner-container">
+    <img src="img/diy-presence-sensor-ld2410C-testing-wired-1024x768.jpg.webp" alt="ESP32 System Build"
+      class="hero-image">
+  </div>
+
+  <!-- Compact Intro Section -->
+  <section class="intro-section">
+    <div class="intro-grid">
+      <div class="intro-title-col">
+        <h2>Introduction</h2>
+        <span class="intro-badge">System Active</span>
+      </div>
+      <div class="intro-content-col">
+        <p>The Adaptive Intelligent Lighting System automatically regulates indoor illumination based on environmental
+          factors and occupancy. By actively monitoring ambient light and human presence, the system guarantees energy
+          is only used when necessary—substantially cutting power waste across classrooms, offices, and residential
+          spaces.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Main Container for Cards -->
+  <div class="main-content-wrapper">
+
+    <!-- Table of Contents Card -->
+    <div class="info-card toc-card">
+      <h3>Table of Contents</h3>
+      <ul class="custom-list toc-list">
+        <li><a href="#problem">Problem Statement</a></li>
+        <li><a href="#objectives">Objectives</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#applications">Applications</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </div>
+
+    <!-- Problem Statement Section -->
+    <div id="problem" class="info-card">
+      <h3>Problem Statement</h3>
+      <p>Traditional lighting systems rely heavily on manual operation, resulting in lights remaining on even when rooms
+        are unoccupied or when sufficient natural light is available. This leads to unnecessary energy consumption,
+        increased electricity costs, and inefficient use of resources.</p>
+      <p>Existing lighting systems often lack centralized monitoring and real-time automation. Therefore, there is a
+        need for an intelligent lighting system that can automatically respond to environmental conditions and occupancy
+        while allowing users to monitor the system remotely.</p>
+    </div>
+
+    <!-- Objectives Section -->
+    <div id="objectives" class="info-card">
+      <h3>Objectives</h3>
+      <h4>General Objective</h4>
+      <p>To develop an adaptive intelligent lighting system that automatically controls indoor lighting using IoT
+        technologies.</p>
+
+      <h4>Specific Objectives</h4>
+      <ul class="custom-list check-list">
+        <li>Design an ESP32-based sensor network for environmental monitoring.</li>
+        <li>Collect occupancy and ambient light data using PIR and LDR sensors.</li>
+        <li>Improve energy efficiency through automatic lighting control.</li>
+      </ul>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="info-card">
+      <h3>Features</h3>
+      <ul class="custom-list feature-list">
+        <li>Automatic light switching based on room occupancy.</li>
+        <li>Ambient light detection for daylight compensation.</li>
+        <li>Real-time environmental monitoring.</li>
+        <li>Suitable for residential, educational, and commercial buildings.</li>
+      </ul>
+    </div>
+
+    <!-- Applications Section -->
+    <div id="applications" class="info-card">
+      <h3>Applications</h3>
+      <div class="badge-grid">
+        <span class="app-badge">Lecture Rooms &amp; Halls</span>
+        <span class="app-badge">Corporate Offices</span>
+        <span class="app-badge">Libraries</span>
+        <span class="app-badge">Conference Rooms</span>
+        <span class="app-badge">Commercial Buildings</span>
+      </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="info-card">
+      <h3>Project Gallery</h3>
+      <p class="gallery-subtitle">Important milestones in the design and implementation of the Adaptive Intelligent
+        Lighting System, highlighting hardware setup and system development.</p>
+
+      <div class="compact-gallery-grid">
+        <div class="gallery-item">
+          <img src="img/setup.jpg" alt="Project Setup">
+          <div class="caption">Project Setup</div>
+        </div>
+        <div class="gallery-item">
+          <img src="css/img/diy-presence-sensor-ld2410C-testing-wired-1024x768.jpg.webp" alt="Presence Sensor">
+          <div class="caption">Presence Sensor &amp; ESP32</div>
+        </div>
+        <div class="gallery-item placeholder">
+          <div class="dummy-img">430 × 270</div>
+          <div class="caption">Real-time Interface</div>
+        </div>
+        <div class="gallery-item placeholder">
+          <div class="dummy-img">430 × 270</div>
+          <div class="caption">System Enclosure</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Compact Footer Update -->
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Adaptive Intelligent Lighting System</h3>
+        <span class="institution">Academic Embedded Systems Project • Makerere University</span>
+      </div>
+      <div class="footer-meta">
+        <p class="copyright">&copy; 2026 All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+
+
+<!-- =============================================================================================================================================================================================== -->
+
+<!-- <head>
   <title>Adaptive Intelligent Lighting System</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet"
@@ -22,14 +189,14 @@
       font-weight: 700 !important;
     }
   </style>
-</head>
+</head> -->
 
-<body>
+<!-- <body>
   <div class="menu-container"></div>
-  <div class="content-container">
-    <!-------------------------------------------------------------------------------------------->
-    <!--Start Header-->
-    <div class="banner"
+  <div class="content-container"> -->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Header-->
+<!-- <div class="banner"
       style="background: url('img/diy-presence-sensor-ld2410C-testing-wired-1024x768.jpg.webp') no-repeat center; background-size: cover; height: 300px;">
     </div>
     <div class="banner">
@@ -37,29 +204,23 @@
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 class="add-top-margin-small">Introduction</h2>
-            <p class="text">
-              The Adaptive Intelligent Lighting System is designed to automatically regulate indoor lighting based on
-              the surrounding environment and room occupancy. By continuously monitoring ambient light levels and human
-              presence, the system ensures that lighting is only provided when necessary. This approach enhances user
-              comfort while reducing unnecessary energy consumption in homes, offices, classrooms, and other indoor
-              environments.
-            </p>
+            
           </div>
         </div>
       </div>
-    </div>
-    <!--End Header-->
-    <!-------------------------------------------------------------------------------------------->
-    <div class="content">
-      <div class="content-table flex-column">
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Intro-->
-        <div class="flex-row">
-          <!-- <div class="flex-item flex-column">
+    </div> -->
+<!--End Header-->
+<!-------------------------------------------------------------------------------------------->
+<!-- <div class="content">
+      <div class="content-table flex-column"> -->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Intro-->
+<!-- <div class="flex-row"> -->
+<!-- <div class="flex-item flex-column">
             <img class="image" src="img/dummay-img.png">
           </div> -->
-          <div class="gallery add-top-margin-small add-bottom-margin-small">
-            <!-- <p class="text text-large">
+<!-- <div class="gallery add-top-margin-small add-bottom-margin-small"> -->
+<!-- <p class="text text-large">
             <div>
               <h2 id="team">Team</h2>
             </div>
@@ -89,7 +250,7 @@
                 </a>
               </div>
             </div> -->
-            <!-- <div class="flex-column">
+<!-- <div class="flex-column">
               <img src="img/user.png">
               <h4>Bryant</h4>
               <div>From CoCiS</div>
@@ -107,17 +268,17 @@
               <img src="#"><a target="_blank" href="javascript:void(0)"> Author 3</a> Maria at Mak CoCiS<br>
               <img src="#"><a target="_blank" href="javascript:void(0)">Author 4</a> Madrine at Mak Jinja<br>
               <img src="#"><a target="_blank" href="javascript:void(0)">Author 5</a> Charles at Mak Jinaja<br> -->
-            <!-- <img src="#"><a target="_blank" href="javascript:void(0)">Laboratory</a><br>
+<!-- <img src="#"><a target="_blank" href="javascript:void(0)">Laboratory</a><br>
               <a target="_blank" href="javascript:void(0)">Institute</a><br>
               <a target="_blank" href="javascript:void(0)">Organization</a><br>
               <a target="_blank" href="javascript:void(0)">Street Address</a><br>
               <a target="_blank" href="javascript:void(0)">City, State, Country</a> -->
-            <!-- </p> -->
-          </div>
+<!-- </p> -->
+<!-- </div>
         </div>
         <div class="flex-row">
-          <div class="flex-item flex-column">
-            <!-- <p class="text add-top-margin">
+          <div class="flex-item flex-column"> -->
+<!-- <p class="text add-top-margin">
               Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi
               vel
               augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
@@ -126,27 +287,27 @@
               vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
               sapien ut libero venenatis faucibus. Nullam quis ante.
             </p> -->
-            <h3>Table of Content</h3>
+<!-- <h3>Table of Content</h3>
             <ul>
               <li><a href="#text-only">Problem Statement</a></li>
               <li><a href="#objectives">Objectives</a></li>
               <li><a href="#features">Features</a></li>
               <li><a href="#application">Applications</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <!-- <li><a href="#team">Team</a></li> -->
-              <!-- <li><a href="#text-with-images-and-videos">Text with Images and Videos</a></li>
+              <li><a href="#gallery">Gallery</a></li> -->
+<!-- <li><a href="#team">Team</a></li> -->
+<!-- <li><a href="#text-with-images-and-videos">Text with Images and Videos</a></li>
               <li><a href="#iframe">Iframe</a></li>
               <li><a href="#list-of-projects">List of Projects</a></li>
               <li><a href="#gallery">Gallery (responsive size)</a></li>
               <li><a href="#masonry">Masonry (responsive size)</a></li>
               <li><a href="#survey">Survey</a></li> -->
-            </ul>
+<!-- </ul>
           </div>
-        </div>
-        <!--End Intro-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text Only-->
-        <div class="flex-row">
+        </div> -->
+<!--End Intro-->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Text Only-->
+<!-- <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="text-only">Problem Statement</h2>
             <hr>
@@ -159,8 +320,8 @@
               Existing lighting systems often lack centralized monitoring and real-time automation. Therefore, there is
               a need for an intelligent lighting system that can automatically respond to environmental conditions and
               occupancy while allowing users to monitor the system remotely.
-            </p>
-            <!-- <h3>Break Long URL</h3>
+            </p> -->
+<!-- <h3>Break Long URL</h3>
             <p class="text">
               <a class="break-long-url" target="_blank"
                 href="https://www.google.com/maps/place/Carnegie+Mellon+University/@40.4430576,-79.9431263,17z/data=!4m5!3m4!1s0x8834f21f58679a9f:0x88716b461fc4daf4!8m2!3d40.4428753!4d-79.9430922">https://www.google.com/maps/place/Carnegie+Mellon+University/@40.4430576,-79.9431263,17z/data=!4m5!3m4!1s0x8834f21f58679a9f:0x88716b461fc4daf4!8m2!3d40.4428753!4d-79.9430922</a>
@@ -254,14 +415,14 @@
             </p>
           </div>
         </div> -->
-            <!--End Text Only-->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Text with Buttons-->
-            <!-- <div class="flex-row"> -->
-            <h2 id="objectives">Objectives</h2>
-            <hr>
-            <!-- <div class="flex-item flex-column"> -->
-            <div>
+<!--End Text Only-->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Text with Buttons-->
+<!-- <div class="flex-row"> -->
+<!-- <h2 id="objectives">Objectives</h2>
+            <hr> -->
+<!-- <div class="flex-item flex-column"> -->
+<!-- <div>
               <p class="text">
               <h4>General Objective</h4>
               To develop an adaptive intelligent lighting system that automatically controls indoor lighting using IoT
@@ -273,11 +434,11 @@
                 <li>Improve energy efficiency through automatic lighting control.</li>
               </ul>
               </p>
-            </div>
-            <!-- </div> -->
-            <!-- </div> -->
+            </div> -->
+<!-- </div> -->
+<!-- </div> -->
 
-            <div>
+<!-- <div>
               <div>
                 <h2 id="features">Features</h2>
                 <hr>
@@ -288,8 +449,8 @@
                   <li>Suitable for residential, educational, and commercial buildings.</li>
                 </ul>
               </div>
-            </div>
-            <!-- <div class="control-group">
+            </div> -->
+<!-- <div class="control-group">
               <button class="custom-button">Default</button>
               <button class="custom-button custom-button-primary">Primary</button>
               <button class="custom-button custom-button-danger">Danger</button>
@@ -362,7 +523,7 @@
               <button class="custom-button-flat pulse-danger"><img src="img/home.png"><span>Pulse</span></button>
               <button class="custom-button-flat pulse-info"><img src="img/home.png"><span>Pulse</span></button>
             </div> -->
-            <!-- <div>
+<!-- <div>
               <div>
                 <p class="text">
 
@@ -415,10 +576,10 @@
                 </p>
               </div>
             </div> -->
-            <!--End Text with Buttons-->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Text with Images and Image buttons-->
-            <!-- <div class="flex-row">
+<!--End Text with Buttons-->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Text with Images and Image buttons-->
+<!-- <div class="flex-row">
               <div class="flex-item flex-column">
                 <h2 id="images-and-image-button">Images and Image Button</h2>
                 <hr>
@@ -461,17 +622,17 @@
                 </p>
               </div>
             </div> -->
-            <!--End Text with Images and Image buttons-->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Text around Image-->
-            <div>
+<!--End Text with Images and Image buttons-->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Text around Image-->
+<!-- <div>
               <h2 id="application">Applications</h2>
               <hr>
-              <div class="flex-item flex-column">
+              <div class="flex-item flex-column"> -->
 
 
-                <!-- <img class="image image-wrap-text max-width-400" src="img/dummay-img.png"> -->
-                <ul>
+<!-- <img class="image image-wrap-text max-width-400" src="img/dummay-img.png"> -->
+<!-- <ul>
                   Lecture Rooms or halls<br>
                   Offices<br>
                   Libraries<br>
@@ -480,12 +641,12 @@
                 </ul>
 
               </div>
-            </div>
-            <!--End Text around Image-->
-            <!-------------------------------------------------------------------------------------------->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- <div class="banner"
+            </div> -->
+<!--End Text around Image-->
+<!-------------------------------------------------------------------------------------------->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="banner"
           style="background: url('img/diy-presence-sensor-ld2410-testing-wired-1024x768.jpg.webp') no-repeat center; background-size: cover; height: 500px;">
           <div class="banner-table flex-column" style="background-color: rgba(0, 0, 0, 0.5);">
 
@@ -506,16 +667,16 @@
             </div>
           </div>
         </div> -->
-            <!-- <div class="content">
+<!-- <div class="content">
           <div class="content-table flex-column">
             ---------------------------------------------------------------------------------------- -->
-            <!--Start Text with Centered Image and Table-->
-            <!-- <div class="flex-row"> -->
-            <!-- <div class="flex-item flex-column">
+<!--Start Text with Centered Image and Table-->
+<!-- <div class="flex-row"> -->
+<!-- <div class="flex-item flex-column">
                 <h2 id="centered-image-and-table" class="no-top-margin">Centered Image and Table</h2>
                 <hr>
                 <!-- <p class="text"> -->
-            <!-- Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie,
+<!-- Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie,
                   musica,
                   sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li
                   pronunciation
@@ -523,7 +684,7 @@
                   li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar
                   payar
                   custosi traductores. At solmen va esser. -->
-            <!-- </p>
+<!-- </p>
                 <p class="text text-center graph-title">
                   This image does not scroll and only scale.
                 </p>
@@ -531,7 +692,7 @@
                 <p class="text text-center graph-title">
                   This image scrolls on mobile with a fixed height.
                 </p> -->
-            <!-- <div class="scrollable-image-container center add-top-margin-small">
+<!-- <div class="scrollable-image-container center add-top-margin-small">
                   <img class="scrollable-image center" src="img/dummay-img.png">
                 </div>
                 <p class="text">
@@ -548,7 +709,7 @@
                 <p class="text text-center graph-title">
                   This is the title for the bottom scrollable table.
                 </p> -->
-            <!-- <div class="custom-table-container center add-top-margin-small">
+<!-- <div class="custom-table-container center add-top-margin-small">
                   <table class="custom-table">
                     <thead>
                       <tr class="bg-color-gray">
@@ -594,10 +755,10 @@
                     </tfoot>
                   </table>
                 </div> -->
-            <!-- <p class="text text-center graph-title">
+<!-- <p class="text text-center graph-title">
                   This is the title for the bottom very long scrollable table.
                 </p> -->
-            <!-- <div class="custom-table-container center add-top-margin-small">
+<!-- <div class="custom-table-container center add-top-margin-small">
                   <table class="custom-table">
                     <thead>
                       <tr class="bg-color-gray">
@@ -719,7 +880,7 @@
                     </tfoot>
                   </table>
                 </div> -->
-            <!-- <p class="text">
+<!-- <p class="text">
                   Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie,
                   musica,
                   sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li
@@ -731,10 +892,10 @@
                 </p>
               </div>
             </div> -->
-            <!--End Text with Centered Image and Table-->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Text with Adaptive Image-->
-            <!-- <div class="flex-row">
+<!--End Text with Centered Image and Table-->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Text with Adaptive Image-->
+<!-- <div class="flex-row">
               <div class="flex-item flex-column">
                 <h2 id="adaptive-image">Adaptive Image</h2>
                 <hr>
@@ -764,10 +925,10 @@
               </div>
             </div>
             <!--End Text with Adaptive Image-->
-            <!-------------------------------------------------------------------------------------------->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- <div class="banner"
+<!-------------------------------------------------------------------------------------------->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="banner"
           style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 500px;">
         </div>
         <div class="banner">
@@ -776,7 +937,7 @@
               <div class="flex-item flex-column">
                 <h2 class="add-top-margin-small">This is the two banner area with photo</h2>
                 <p class="text"> -->
-            <!-- Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+<!-- Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
                   nisi
                   vel
                   augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
@@ -788,9 +949,9 @@
         </div>
         <div class="content">
           <div class="content-table flex-column"> -->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Text with Images and Videos-->
-            <!-- <div class="flex-row">
+<!-------------------------------------------------------------------------------------------->
+<!--Start Text with Images and Videos-->
+<!-- <div class="flex-row">
               <div class="flex-item flex-column">
                 <h2 id="text-with-images-and-videos" class="no-top-margin">Text with Images and Videos</h2>
                 <hr>
@@ -820,7 +981,7 @@
                   dolor
                   sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
                   dolore -->
-            <!-- magnam aliquam quaerat voluptatem. Sed ut perspiciatis unde.
+<!-- magnam aliquam quaerat voluptatem. Sed ut perspiciatis unde.
                 </p>
               </div>
             </div>
@@ -914,10 +1075,10 @@
                 </p>
               </div>
             </div> -->
-            <!--End Text with Images and Videos-->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Text with Iframe-->
-            <!-- <div class="flex-row">
+<!--End Text with Images and Videos-->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Text with Iframe-->
+<!-- <div class="flex-row">
               <div class="flex-item flex-column">
                 <h2 id="iframe">Iframe</h2>
                 <hr>
@@ -942,10 +1103,10 @@
                 </p>
               </div>
             </div> -->
-            <!--END Text with Iframe-->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start List of Projects-->
-            <!-- <div class="flex-row">
+<!--END Text with Iframe-->
+<!-------------------------------------------------------------------------------------------->
+<!--Start List of Projects-->
+<!-- <div class="flex-row">
               <div class="flex-item flex-column full-width">
                 <h2 id="list-of-projects">List of Projects</h2>
                 <hr>
@@ -999,10 +1160,10 @@
                 </p>
               </div>
             </div> -->
-            <!--End List of Projects-->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Gallery-->
-            <div class="flex-row">
+<!--End List of Projects-->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Gallery-->
+<!-- <div class="flex-row">
               <div class="flex-item flex-column">
                 <h2 id="gallery">Gallery </h2>
                 <hr>
@@ -1041,8 +1202,8 @@
               <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
                 <div>Image Caption</div>
               </a>
-            </div>
-            <!-- <div class="flex-row">
+            </div> -->
+<!-- <div class="flex-row">
               <div class="flex-item flex-column">
                 <p class="text">
                  
@@ -1050,7 +1211,7 @@
               </div>
             </div>
              -->
-            <!-- <div class="gallery add-top-margin-small add-bottom-margin-small">
+<!-- <div class="gallery add-top-margin-small add-bottom-margin-small">
 
               <div class="flex-column">
                 <img src="img/dummay-img.png">
@@ -1093,7 +1254,7 @@
                 </div>
               </div>
             </div> -->
-            <!-- <div class="flex-row">
+<!-- <div class="flex-row">
               <div class="flex-item flex-column">
                 <p class="text">
                   Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
@@ -1107,9 +1268,9 @@
               </div>
             </div>
             End Gallery -->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Masonry-->
-            <!-- <div class="flex-row">
+<!-------------------------------------------------------------------------------------------->
+<!--Start Masonry-->
+<!-- <div class="flex-row">
               <div class="flex-item flex-column">
                 <h2 id="masonry">Masonry (responsive size)</h2>
                 <hr>
@@ -1124,7 +1285,7 @@
                 </p>
               </div>
             </div> -->
-            <!-- <div class="masonry add-top-margin-small add-bottom-margin-small">
+<!-- <div class="masonry add-top-margin-small add-bottom-margin-small">
               <figure>
                 <img
                   src="https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1820&amp;q=80">
@@ -1189,7 +1350,7 @@
                 <figcaption>Vestibulum purus quam, scelerisque ut.</figcaption>
               </figure>
             </div> -->
-            <div class="flex-row">
+<!-- <div class="flex-row">
               <div class="flex-item flex-column">
                 <p class="text">
                   Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
@@ -1201,11 +1362,11 @@
                   vel, luctus pulvinar, hendrerit id, lorem.
                 </p>
               </div>
-            </div>
-            <!--End Masonry-->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Survey-->
-            <!-- <div class="flex-row">
+            </div> -->
+<!--End Masonry-->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Survey-->
+<!-- <div class="flex-row">
               <div class="flex-item flex-column">
                 <h2 id="survey">Survey</h2>
                 <hr>
@@ -1303,10 +1464,10 @@
                 </p>
               </div>
             </div> -->
-            <!-- End Survey -->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Credits-->
-            <!-- <div class="flex-row">
+<!-- End Survey -->
+<!-------------------------------------------------------------------------------------------->
+<!--Start Credits-->
+<!-- <div class="flex-row">
               <div class="flex-item flex-item-stretch flex-column">
                 <p class="text text-small text-italic add-top-margin-large">
                   Credits: <span class="highlight-text">Organization One</span>: Author One and Author Two / <span
@@ -1314,12 +1475,12 @@
                 </p>
               </div>
             </div> -->
-            <!--End Credits-->
-            <!-------------------------------------------------------------------------------------------->
-          </div>
+<!--End Credits-->
+<!-------------------------------------------------------------------------------------------->
+<!-- </div>
         </div>
         <div class="footer-container"></div>
       </div>
 </body>
 
-</html>
+</html> -->
